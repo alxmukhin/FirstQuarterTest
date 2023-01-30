@@ -30,3 +30,27 @@ void PrintOutput(string message, string[] array)
         Console.Write(array[i] + " ");
     }
 }
+
+//Method calculates of number array elemts which are not longer than three symbols and builds new array consisting of them
+string[] ExtractThreeSymbolElements(string[] array)
+{
+    int number = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length < 4)
+        {
+            number = number + 1;
+        }
+    }
+    string[] newArray = new string[number];
+    number = 0;
+    for (int j = 0; j < array.Length; j++)
+    {
+        if (array[j].Length < 4)
+        {
+            newArray[number] = array[j];
+            number++;
+        }
+    }
+    return newArray;
+}
