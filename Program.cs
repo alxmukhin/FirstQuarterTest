@@ -1,7 +1,12 @@
-﻿int numberElements = GetNumberOfElements("Введите число элементов в массиве, которое вы хотите ввести: ");
+﻿// Request user to insert number elements in array and collect it
+int numberElements = GetNumberOfElements("Введите число элементов в массиве, которое вы хотите ввести: ");
+// Fill in array and record it
 string[] array = FillInArray(numberElements);
+// Print initial array
 PrintOutput("Задан массив:", array);
+// Create new array containing only elements extracted based on condition and recodr it
 string[] newArray = ExtractThreeSymbolElements(array);
+// Print new array
 PrintOutput("Новый массив, включающий в себя только те элементы начального массива, чья длина не превышает 3 символа:", newArray);
 
 // Method collects number of elements
