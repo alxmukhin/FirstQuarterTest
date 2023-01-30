@@ -1,4 +1,8 @@
-﻿
+﻿int numberElements = GetNumberOfElements("Введите число элементов в массиве, которое вы хотите ввести: ");
+string[] array = FillInArray(numberElements);
+PrintOutput("Задан массив:", array);
+string[] newArray = ExtractThreeSymbolElements(array);
+PrintOutput("Новый массив, включающий в себя только те элементы начального массива, чья длина не превышает 3 символа:", newArray);
 
 // Method collects number of elements
 int GetNumberOfElements(string message)
