@@ -19,3 +19,14 @@ string[] FillInArray(int number)
     }
     return array;
 }
+
+// Method prints array with description before it
+void PrintOutput(string message, string[] array)
+{
+    Console.WriteLine();
+    Console.WriteLine(message);
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+}
