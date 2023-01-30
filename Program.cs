@@ -1,2 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+
+// Method collects number of elements
+int GetNumberOfElements(string message)
+{
+    Console.WriteLine(message);
+    int number = int.Parse(Console.ReadLine() ?? "0");
+    return number;
+}
